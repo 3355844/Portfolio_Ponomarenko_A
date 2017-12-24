@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WACh</title>
+    <title>WACh Bootstrap 4</title>
     <link rel="icon" href="img/avatar.jpg"/>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 
@@ -279,11 +280,184 @@
         Pagination
     </div>
     <div class="row">
-
+        <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <ul class="pagination pagination-lg">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <ul class="pagination pagination-sm">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Photos</a></li>
+            <li class="breadcrumb-item"><a href="#">Summer</a></li>
+            <li class="breadcrumb-item"><a href="#">Italy</a></li>
+            <li class="breadcrumb-item"><a href="#">Rome</a></li>
+        </ul>
     </div>
 </section>
-</body>
 
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<!--List Groups-->
+<section class="container">
+    <div class="row h2">List Groups</div>
+    <div class="row">
+        <ul class="list-group col-3">
+            <li class="list-group-item active">1 item</li>
+            <li class="list-group-item disabled">2 item</li>
+            <li class="list-group-item">3 item</li>
+        </ul>
+        <div class="col-3">
+            <a class="list-group-item list-group-item-action" href="#">1 item</a>
+            <a class="list-group-item list-group-item-danger active" href="#">2 item</a>
+            <a class="list-group-item list-group-item-info" href="#">3 item</a>
+        </div>
+    </div>
+</section>
+
+<!--Cards-->
+<section class="container">
+    <div class="row h2">
+        Card
+    </div>
+    <div class="row">
+        <div class="card col-3">
+            <img class="card-img-top w-100" src="img/avatar.jpg">
+            <div class="card-header">Ponomarenko A.</div>
+            <div class="card-body">Junior JS/Java Developer</div>
+            <button class="btn btn-info">Profile</button>
+            <div class="card-footer">Email: 3355844@gmail.com</div>
+        </div>
+        <div class="card col-3">
+            <div class="card-header">Ponomarenko A.</div>
+            <div class="card-body">Junior JS/Java Developer</div>
+            <button class="btn btn-info">Profile</button>
+            <div class="card-footer">Email: 3355844@gmail.com</div>
+            <img class="card-img-top w-100" src="img/avatar.jpg">
+        </div>
+        <div class="card col-3">
+            <img class="card-img-top w-100" src="img/avatar.jpg">
+            <div class="card-img-overlay">
+                <div class="card-body">
+                    <h4 class="text-warning">Ponomarenko A.</h4>
+                    <p class="text-success"> Junior JS/Java Developer</p>
+                    <a class="btn btn-danger" href="#">Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Dropdown-->
+<section class="container">
+    <div class="row h2">
+        Dropdown
+    </div>
+    <div class="row">
+        <div class="col-3">
+
+            <button type="button" data-toggle="dropdown" class="btn btn-danger dropdown-toggle">Dropdown button</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="btn-group col-2">
+            <button type="button" class="btn btn-primary">News</button>
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">111Tablet</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+        </div>
+        <div class="btn-group col-2">
+            <button type="button" class="btn btn-outline-warning">Economic</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">22222Tablet</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Collapsible-->
+<section class="container">
+    <div class="row h2">Collapsible</div>
+    <div class="row">
+        <div class="col-2">
+            <button class="btn btn-warning" data-toggle="collapse" data-target="#some-text">Collapsible</button>
+        </div>
+        <div class="col-10 collapse" id="some-text">
+            Here some text must be )))
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-2" id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Link 1</a>
+                </div>
+                <div id="collapseOne" class="collapse">
+                    <div class="card-body">text body one</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Link 1</a>
+                </div>
+                <div id="collapseTwo" class="collapse">
+                    <div class="card-body">text body two</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseThree">Link 1</a>
+                </div>
+                <div id="collapseThree" class="collapse">
+                    <div class="card-body">text body three</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-6"></div>
+    </div>
+</section>
+
+</body>
 <script src="js/main.js"></script>
 </html>`
