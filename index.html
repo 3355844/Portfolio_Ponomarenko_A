@@ -37,6 +37,9 @@
     </div>
 </nav>
 <section class="container">
+    <div class="row h2">
+        Text examples
+    </div>
     <div class="row">
         <div class="col-3"><abbr>abbr</abbr>
             <small>Tag small
@@ -47,39 +50,42 @@
         <div class="col-3">hello 3</div>
     </div>
 </section>
-<section>
-    <div class="row">Bootstrap Colors</div>
-    <div class="container-fluid row">
-        <div class="col-1 bg-info"></div>
-        <div class="col-1 bg-danger"></div>
-        <div class="col-1 bg-warning"></div>
-        <div class="col-1 bg-faded"></div>
-        <div class="col-1 bg-inverse"></div>
-        <div class="col-1 bg-primary"></div>
-        <div class="col-1 bg-info"></div>
-        <div class="col-1 bg-danger"></div>
-        <div class="col-1 bg-warning"></div>
-        <div class="col-1 bg-faded"></div>
-        <div class="col-1 bg-inverse"></div>
-        <div class="col-1 bg-primary"></div>
+<section class="container">
+    <div class="row h2">Bootstrap Colors</div>
+    <div class="row h-50">
+        <div class="col-1 bg-info">info</div>
+        <div class="col-1 bg-danger">danger</div>
+        <div class="col-1 bg-warning">warning</div>
+        <div class="col-1 bg-faded">faded</div>
+        <div class="col-1 bg-inverse text-warning">inverse</div>
+        <div class="col-1 bg-primary">primary</div>
+        <div class="col-1 bg-info">info</div>
+        <div class="col-1 bg-danger">danger</div>
+        <div class="col-1 bg-warning">warning</div>
+        <div class="col-1 bg-faded">faded</div>
+        <div class="col-1 bg-inverse text-danger">inverse</div>
+        <div class="col-1 bg-primary ">primary</div>
+
     </div>
 </section>
-<div class="container m-4">
-    <div class="row">
-        <div class="col-3"> one</div>
-        <div class="col-3 alert alert-danger">
-            <a class="alert-link" href="#">this Alert danger</a>
-        </div>
-        <div class="col-3 alert alert-dismissible fade show alert-success">
-            <a class="alert-link" href="#">this Alert success</a>
-        </div>
-        <div class="col-3 alert alert-warning alert-dismissable fade show">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Success!</strong> Warning
+<section class="container">
+    <div class="container m-4">
+        <div class="row h2">Alerts</div>
+        <div class="row">
+            <div class="col-3"> one</div>
+            <div class="col-3 alert alert-danger">
+                <a class="alert-link" href="#">this Alert danger</a>
+            </div>
+            <div class="col-3 alert alert-dismissible fade show alert-success">
+                <a class="alert-link" href="#">this Alert success</a>
+            </div>
+            <div class="col-3 alert alert-warning alert-dismissable fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> Warning
+            </div>
         </div>
     </div>
-</div>
-
+</section>
 </body>
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="js/main.js"></script>
