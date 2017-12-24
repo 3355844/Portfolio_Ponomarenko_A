@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -36,9 +38,44 @@
         </div>
     </div>
 </nav>
+
+<!--Grid System-->
+<section class="container text-center">
+    <div class="row h2">
+        Grid System
+    </div>
+    <div class="row">
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+        <div class="col-1">1</div>
+    </div>
+    <div class="row">
+        <div class="col-4">4</div>
+        <div class="col-4">4</div>
+        <div class="col-4">4</div>
+    </div>
+    <div class="row">
+        <div class="col-4">4</div>
+        <div class="col-8">8</div>
+    </div>
+    <div class="row">
+        <div class="col-12">12</div>
+    </div>
+</section>
+
+<!--Typography-->
 <section class="container">
     <div class="row h2">
-        Text examples
+        Typography
     </div>
     <div class="row">
         <div class="col-3"><abbr>abbr</abbr>
@@ -47,9 +84,13 @@
             </small>
         </div>
         <div class="col-6"><code>function</code><kbd>alt + q</kbd></div>
-        <div class="col-3">hello 3</div>
+        <div class="col-3">hello 4
+            <dl class="h3"> bootstrap h3</dl>
+        </div>
     </div>
 </section>
+
+<!--Colors-->
 <section class="container">
     <div class="row h2">Bootstrap Colors</div>
     <div class="row h-50">
@@ -68,11 +109,72 @@
 
     </div>
 </section>
+
+<!--Tables-->
 <section class="container">
-    <div class="container m-4">
+    <div class="row h2">Tables</div>
+    <div class="row">
+        <table class="table table-warning">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Andrei</td>
+                <td>Ponomarenko</td>
+                <td>3355844@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Andrei</td>
+                <td>Ponomarenko</td>
+                <td>3355844@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<!--Images-->
+<div class="container">
+    <div class="row h2">Images</div>
+    <div class="row">
+        <div class="col-4">
+            <img class="rounded" src="img/avatar.jpg">
+        </div>
+        <div class="col-4">
+            <img class="rounded-circle" src="img/avatar.jpg">
+        </div>
+        <div class="col-4">
+            <img class="img-thumbnail" src="img/avatar.jpg">
+        </div>
+    </div>
+</div>
+
+<!--Jumbotron-->
+<div class="container">
+    <div class="row h2">Jumbotron</div>
+    <div class="row">
+        <div class="col-6 jumbotron jumbotron-fluid">
+            <h2>Jumbotron h2</h2>
+            <p>jumbotron p</p>
+        </div>
+        <div class="col-6 jumbotron">
+            <h2>Jumbotron h2</h2>
+            <p>jumbotron p</p>
+        </div>
+    </div>
+</div>
+
+<!--Alerts-->
+<section class="container">
+    <div class="container">
         <div class="row h2">Alerts</div>
         <div class="row">
-            <div class="col-3"> one</div>
+            <div class="col-3">
+                <div class="alert alert-success">
+                    <strong>Success!</strong> Indicates a successful or positive action.
+                </div>
+            </div>
             <div class="col-3 alert alert-danger">
                 <a class="alert-link" href="#">this Alert danger</a>
             </div>
@@ -86,7 +188,102 @@
         </div>
     </div>
 </section>
+
+<!--Buttons-->
+<section class="container">
+    <div class="row h2">Buttons</div>
+    <div class="row">
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div class="row">
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <button type="button" class="btn btn-outline-light text-dark">Light</button>
+    </div>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary">Default</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger">One</button>
+        <button type="button" class="btn btn-warning">Too</button>
+        <button type="button" class="btn btn-info">Three</button>
+
+    </div>
+</section>
+
+<!--Badges-->
+<section class="container">
+    <div class="row h2">Badges</div>
+    <div class="row">
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-secondary text-gray-dark">Secondary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-pill badge-warning">Warning</span>
+        <span class="badge badge-pill badge-danger">Danger</span>
+    </div>
+    <button type="button" class="btn btn-primary">
+        Messages <span class="badge badge-light">7</span>
+    </button>
+</section>
+
+<!--Progress Bar-->
+<section class="container">
+    <div class="row h2">
+        Progress bar
+    </div>
+    <div class="row">
+        <div class="col-4 progress">
+            <div class="progress-bar" style="width:70%">70%</div>
+        </div>
+        <div class="col-4 progress">
+            <div class="progress-bar bg-danger" style="width:98%">98%</div>
+        </div>
+        <div class="col-4 progress">
+            <div class="progress-bar progress-bar-striped" style="width:40%">40%</div>
+        </div>
+    </div>
+    <div class=" mt-2">
+        <div class="col-12 progress">
+            <div class="progress-bar bg-success" style="width:40%">
+                Free Space
+            </div>
+            <div class="progress-bar bg-warning" style="width:10%">
+                Warning
+            </div>
+            <div class="progress-bar bg-danger" style="width:20%">
+                Danger
+            </div>
+        </div>
+    </div>
+</section>
 </body>
+
+<!--Pagination-->
+<section class="container">
+    <div class="row h2">
+        Pagination
+    </div>
+    <div class="row">
+
+    </div>
+</section>
+
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="js/main.js"></script>
 </html>`
