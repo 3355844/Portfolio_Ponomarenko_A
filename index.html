@@ -511,13 +511,12 @@
 </section>
 
 <!--Nav Bar-->
-<section class="container">
-
-    <nav class="navbar  navbar-toggleable-sm bg-inverse navbar-inverse">
-            <div class="navbar-brand">
-                WACh
-                <img  style="width:40px;" src="img/avatar.jpg">
-            </div>
+<section class="container-fluid">
+    <nav class="navbar  navbar-toggleable-sm bg-inverse navbar-inverse d-flex ">
+        <div class="navbar-brand">
+            WACh
+            <img style="width:40px;" src="img/avatar.jpg">
+        </div>
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Link 1 Active</a>
@@ -529,9 +528,166 @@
                 <a class="nav-link" href="#">Link 3</a>
             </li>
         </ul>
-
+        <form class="form-inline" action="#">
+            <input class="form-control mr-sm-2" placeholder="Search" type="text">
+            <button class="btn btn-success mr-sm-2">Search</button>
+        </form>
+        <form class="form-inline">
+            <div class="input-group ">
+                <span class="input-group-addon">@</span>
+                <input class="form-control" type="text" placeholder="Username"/>
+            </div>
+        </form>
     </nav>
+
+
+</section>
+
+<!--Forms-->
+<section class="container">
+
+    <div class="row h2">Forms</div>
+    <div class="row">
+        <form class="form-inline" action="#">
+            <div class="form-group col-9">
+                <label for="email">Email address:</label>
+                <input class="form-control" type="email" id="email">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" class="form-control">
+            </div>
+            <div class="form-check col-3">
+                <label class="form-check-label">
+                    <input type="checkbox" class="mr-2 ml-2"> Remember
+                </label>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<!--Inputs-->
+<section class="container">
+    <div class="row h2">Inputs</div>
+    <div class="row">
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"> Option-1
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"> Option-2
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"> Option-3
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="custom-radio mr-4">
+            <label>
+                <input type="radio"> Option-1
+            </label>
+        </div>
+        <div class="custom-radio mr-4">
+            <label>
+                <input type="radio"> Option-2
+            </label>
+        </div>
+        <div class="custom-radio mr-4">
+            <label>
+                <input type="radio"> Option-3
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <label for="sel1" class="h3">
+                Select List
+            </label>
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+        </div>
+    </div>
+</section>
+
+<!--Carousel-->
+<section class="container">
+    <div class="row h2">Carousel</div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div id="demo" class="carousel slide col-6 img-thumbnail" data-ride="carousel">
+
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+
+            <div class="carousel-inner align-content-center">
+                <div class="carousel-item active">
+                    <img height="400" src="img/18485628_1912636402350110_4287044080093224481_n.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img height="400" src="img/18557318_1912636389016778_5429792249993842716_n.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img height="400" src="img/18581975_1912638135683270_4447576483474898649_n.jpg">
+                </div>
+                <div class="carousel-item ">
+                    <img height="400" src="img/16195835_1856364747977276_7073235004988545325_n.jpg">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--Modal-->
+<section class="container">
+    <div class="row">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+        </button>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>WACh</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/avatar.jpg" width="50">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 </body>
 <script src="js/main.js"></script>
-</html>`
+</html>
